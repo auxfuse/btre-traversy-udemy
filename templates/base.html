@@ -1,11 +1,29 @@
+{% load static %} <!-- Needed to link to static files that are
+ saved in our root static folder -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Font Awesome loaded from static folder -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <!-- Bootstrap loaded from static folder -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Lightbox loaded from static folder -->
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+    <!-- Custom Stylesheet loaded from static folder -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
     <title>BT Real Estate</title>
 </head>
 <body>
+
     {% block content %}
     {% endblock %}
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
