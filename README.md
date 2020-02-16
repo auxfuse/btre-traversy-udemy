@@ -8,7 +8,7 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 
 ### Listing Table
 
-<div style="text-align: center;">
+<p align="center">
 
 |Field name:|Field Type:|
 |:---:|:---:|
@@ -36,11 +36,11 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 |photo_5|STR|
 |photo_6|STR|
 
-</div>
+</p>
 
 ### Realtor Table
 
-<div style="text-align: center;">
+<p align="center">
 
 |Field name:|Field Type:|
 |:---:|:---:|
@@ -53,11 +53,11 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 |is_mvp|BOOL def[false]|
 |hire_date|DATE|
 
-</div>
+</p>
 
 ### Contact Table
 
-<div style="text-align: center;">
+<p align="center">
 
 |Field name:|Field Type:|
 |:---:|:---:|
@@ -71,4 +71,4 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 |message|TEXT|
 |contact_date|DATE|
 
-</div>
+</p>
