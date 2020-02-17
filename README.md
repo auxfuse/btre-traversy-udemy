@@ -6,7 +6,7 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 
 ## MODEL/DB Fields
 
-### Listing Table
+### Listing Table:
 
 |Field name:            |Field Type:                |
 |:---------------------:|:-------------------------:|
@@ -34,7 +34,7 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 |photo_5                |STR                        |
 |photo_6                |STR                        |
 
-### Realtor Table
+### Realtor Table:
 
 |Field name:            |Field Type:                |
 |:---------------------:|:-------------------------:|
@@ -47,7 +47,7 @@ Follow along Video tutorial series on <a href="https://www.udemy.com/course/pyth
 |is_mvp                 |BOOL def[false]            |
 |hire_date              |DATE                       |
 
-### Contact Table
+### Contact Table:
 
 |Field name:            |Field Type:                |
 |:---------------------:|:-------------------------:|
