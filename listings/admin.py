@@ -13,6 +13,5 @@ class ListingAdmin(admin.ModelAdmin):
     list_per_page = 15
 
 
-
 # Register your models here.
 admin.site.register(Listing, ListingAdmin)
