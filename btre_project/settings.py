@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'btre.apps.BtreConfig',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
