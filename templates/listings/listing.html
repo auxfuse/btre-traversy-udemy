@@ -200,7 +200,7 @@
                         <input type="hidden" name="listing_id" value="{{ listing.id }}">
                         <div class="form-group">
                             <label for="property_name" class="col-form-label">Property:</label>
-                            <input type="text" name="listing" class="form-control" value="{{ listing.title }}" disabled="">
+                            <input type="text" name="listing" class="form-control" value="{{ listing.title }}">
                         </div>
                         <div class="form-group">
                             <label for="name" class="col-form-label">Name:</label>
@@ -210,8 +210,7 @@
                                 {% endif %} required="">
                         </div>
                         <div class="form-group">
-                            <label for="email"
-                                   class="col-form-label">Email:</label>
+                            <label for="email" class="col-form-label">Email:</label>
                             <input type="email" name="email" class="form-control"
                                 {% if user.is_authenticated %}
                                    value="{{ user.email }}"
