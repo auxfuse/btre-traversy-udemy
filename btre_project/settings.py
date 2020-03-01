@@ -1,4 +1,5 @@
 from django.contrib.messages import constants as messages
+import dj_database_url
 
 
 """
@@ -60,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'btre_project.urls'
@@ -86,16 +88,19 @@ WSGI_APPLICATION = 'btre_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
-        'USER': 'postgres',
-        'PASSWORD': os.environ.get('PASSWORD'),
-        'HOST': 'localhost'
+if os.getenv("DATABASE_URL"):
+    DATABASES = {'default': dj_database_url.parse(
+        os.environ.get('DATABASE_URL'))}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'btredb',
+            'USER': 'postgres',
+            'PASSWORD': os.environ.get('DB_PW'),
+            'HOST': 'localhost'
+        }
     }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
